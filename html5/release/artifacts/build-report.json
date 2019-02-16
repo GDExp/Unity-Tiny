@@ -54,7 +54,7 @@
         "Children": [{
             "Item": {
                 "Name": "TinyExport/Unity Tiny - Stack Jump/html5/release/build/entities.js",
-                "Size": 15383,
+                "Size": 15384,
                 "CompressedSize": 2859
             },
             "Children": [{
@@ -66,7 +66,7 @@
             }, {
                 "Item": {
                     "Name": "MainScene",
-                    "Size": 11368,
+                    "Size": 11369,
                     "CompressedSize": 2298
                 }
             }]
@@ -92,8 +92,8 @@
         }, {
             "Item": {
                 "Name": "TinyExport/Unity Tiny - Stack Jump/html5/release/build/main.js",
-                "Size": 3383,
-                "CompressedSize": 979
+                "Size": 3352,
+                "CompressedSize": 962
             }
         }]
     }]
