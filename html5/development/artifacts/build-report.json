@@ -1,0 +1,106 @@
+﻿{
+    "Item": {
+        "Name": "Project",
+        "Size": 0,
+        "CompressedSize": 0
+    },
+    "Children": [{
+        "Item": {
+            "Name": "Runtime",
+            "Size": 0,
+            "CompressedSize": 0
+        },
+        "Children": [{
+            "Item": {
+                "Name": "TinyExport/Unity Tiny - Stack Jump/html5/development/build/runtime.js",
+                "Size": 6196610,
+                "CompressedSize": 784949
+            }
+        }]
+    }, {
+        "Item": {
+            "Name": "Assets",
+            "Size": 0,
+            "CompressedSize": 0
+        },
+        "Children": [{
+            "Item": {
+                "Name": "JavaScript",
+                "Size": 80344,
+                "CompressedSize": 0
+            }
+        }, {
+            "Item": {
+                "Name": "Assets/TinySamples/MatchThree/Fonts/PixellariExtended.asset",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "f7fdd39164ea67a4f839f1aa793a2e11", "FileId": 11400000, "Type": 2 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/Unity Tiny - Stack Jump/html5/development/artifacts/assets/PixellariExtended.png",
+                    "Size": 48668,
+                    "CompressedSize": 36363,
+                    "Object": { "$TypeId": 10, "Guid": "f7fdd39164ea67a4f839f1aa793a2e11", "FileId": 11400000, "Type": 2 }
+                }
+            }]
+        }]
+    }, {
+        "Item": {
+            "Name": "Code",
+            "Size": 0,
+            "CompressedSize": 0
+        },
+        "Children": [{
+            "Item": {
+                "Name": "TinyExport/Unity Tiny - Stack Jump/html5/development/build/entities.js",
+                "Size": 15502,
+                "CompressedSize": 2854
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "BlocksGroup",
+                    "Size": 3922,
+                    "CompressedSize": 930
+                }
+            }, {
+                "Item": {
+                    "Name": "MainScene",
+                    "Size": 11487,
+                    "CompressedSize": 2317
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "TinyExport/Unity Tiny - Stack Jump/html5/development/build/bindings.js",
+                "Size": 100016,
+                "CompressedSize": 8175
+            }
+        }, {
+            "Item": {
+                "Name": "Linked Code Files",
+                "Size": 0,
+                "CompressedSize": 0
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/Unity Tiny - Stack Jump/html5/development/artifacts/scripts/tsc-emit.js",
+                    "Size": 12800,
+                    "CompressedSize": 2636
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "TinyExport/Unity Tiny - Stack Jump/html5/development/build/main.js",
+                "Size": 3462,
+                "CompressedSize": 1004
+            }
+        }, {
+            "Item": {
+                "Name": "TinyExport/Unity Tiny - Stack Jump/html5/development/build/wsclient.js",
+                "Size": 9651,
+                "CompressedSize": 2635
+            }
+        }]
+    }]
+}

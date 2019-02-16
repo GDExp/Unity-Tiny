@@ -1,0 +1,102 @@
+{
+    "Success": true,
+    "Diagnostics": [],
+    "Systems": [
+        {
+            "Name": "BlockMovement",
+            "QualifiedName": "game.BlockMovement",
+            "Description": "New System",
+            "Source": {
+                "File": "C:/Users/Vladimir/Desktop/Unity_projects/Test-Stack Jump/Assets/Unity Tiny - Stack Jump/Scripts/BlockMovement.ts",
+                "Line": 5,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "PlayerCollisionSystem",
+            "QualifiedName": "game.PlayerCollisionSystem",
+            "Description": "New System",
+            "Source": {
+                "File": "C:/Users/Vladimir/Desktop/Unity_projects/Test-Stack Jump/Assets/Unity Tiny - Stack Jump/Scripts/PlayerCollisionSystem.ts",
+                "Line": 5,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "PlayerInput",
+            "QualifiedName": "game.PlayerInput",
+            "Description": "New System",
+            "Source": {
+                "File": "C:/Users/Vladimir/Desktop/Unity_projects/Test-Stack Jump/Assets/Unity Tiny - Stack Jump/Scripts/PlayerInput.ts",
+                "Line": 5,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "ScoreSystem",
+            "QualifiedName": "game.ScoreSystem",
+            "Description": "New System",
+            "Source": {
+                "File": "C:/Users/Vladimir/Desktop/Unity_projects/Test-Stack Jump/Assets/Unity Tiny - Stack Jump/Scripts/ScoreSystem.ts",
+                "Line": 5,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "SpawnerSystems",
+            "QualifiedName": "game.SpawnerSystems",
+            "Description": "New System",
+            "Source": {
+                "File": "C:/Users/Vladimir/Desktop/Unity_projects/Test-Stack Jump/Assets/Unity Tiny - Stack Jump/Scripts/SpawnerSystems.ts",
+                "Line": 5,
+                "Character": 17
+            }
+        }
+    ],
+    "Filters": [],
+    "Behaviours": [],
+    "Performance": [
+        {
+            "Key": "tsconfig",
+            "Description": "Time taken to read and parse the given tsconfig.json file",
+            "Duration": 93,
+            "Steps": 1
+        },
+        {
+            "Key": "checksum",
+            "Description": "Time taken to compute the MD5 of all inputs",
+            "Duration": 150,
+            "Steps": 1
+        },
+        {
+            "Key": "compile",
+            "Description": "Time taken to compile the TypeScript program",
+            "Duration": 918,
+            "Steps": 15
+        },
+        {
+            "Key": "emit",
+            "Description": "Time taken to generate and write the JavaScript output",
+            "Duration": 63,
+            "Steps": 2
+        },
+        {
+            "Key": "metadata",
+            "Description": "Time taken to reflect Tiny metadata from the compiled program",
+            "Duration": 0,
+            "Steps": 5
+        }
+    ],
+    "SourceFiles": [
+        "C:/Users/Vladimir/Desktop/Unity_projects/Test-Stack Jump/Assets/Unity Tiny - Stack Jump/Scripts/BlockMovement.ts",
+        "C:/Users/Vladimir/Desktop/Unity_projects/Test-Stack Jump/Assets/Unity Tiny - Stack Jump/Scripts/BlockSystem.ts",
+        "C:/Users/Vladimir/Desktop/Unity_projects/Test-Stack Jump/Assets/Unity Tiny - Stack Jump/Scripts/PlayerCollisionSystem.ts",
+        "C:/Users/Vladimir/Desktop/Unity_projects/Test-Stack Jump/Assets/Unity Tiny - Stack Jump/Scripts/PlayerInput.ts",
+        "C:/Users/Vladimir/Desktop/Unity_projects/Test-Stack Jump/Assets/Unity Tiny - Stack Jump/Scripts/ScoreSystem.ts",
+        "C:/Users/Vladimir/Desktop/Unity_projects/Test-Stack Jump/Assets/Unity Tiny - Stack Jump/Scripts/SpawnerSystems.ts",
+        "C:/Users/Vladimir/Desktop/Unity_projects/Test-Stack Jump/Library/PackageCache/com.unity.tiny@0.14.1-preview/Runtime/Modules/UTiny.EntityGroup/Scripts/EntityGroup.ts",
+        "C:/Users/Vladimir/Desktop/Unity_projects/Test-Stack Jump/Library/PackageCache/com.unity.tiny@0.14.1-preview/Runtime/Modules/UTiny.EntityGroup/Scripts/EntityLookupCache.ts"
+    ],
+    "InputHash": "95c834e5bd9f947e6310ec41249c897e",
+    "GeneratedAt": "Fri Feb 15 2019 23:09:37 GMT+0400 (Московское время (зима))"
+}
