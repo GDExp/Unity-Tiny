@@ -69,31 +69,31 @@
         {
             "Key": "tsconfig",
             "Description": "Time taken to read and parse the given tsconfig.json file",
-            "Duration": 115,
+            "Duration": 108,
             "Steps": 1
         },
         {
             "Key": "checksum",
             "Description": "Time taken to compute the MD5 of all inputs",
-            "Duration": 199,
+            "Duration": 171,
             "Steps": 1
         },
         {
             "Key": "compile",
             "Description": "Time taken to compile the TypeScript program",
-            "Duration": 876,
+            "Duration": 850,
             "Steps": 16
         },
         {
             "Key": "emit",
             "Description": "Time taken to generate and write the JavaScript output",
-            "Duration": 88,
+            "Duration": 84,
             "Steps": 2
         },
         {
             "Key": "metadata",
             "Description": "Time taken to reflect Tiny metadata from the compiled program",
-            "Duration": 13,
+            "Duration": 11,
             "Steps": 6
         }
     ],
@@ -108,6 +108,6 @@
         "C:/Users/Vladimir/Desktop/Unity_projects/Test-Stack Jump/Library/PackageCache/com.unity.tiny@0.14.1-preview/Runtime/Modules/UTiny.EntityGroup/Scripts/EntityGroup.ts",
         "C:/Users/Vladimir/Desktop/Unity_projects/Test-Stack Jump/Library/PackageCache/com.unity.tiny@0.14.1-preview/Runtime/Modules/UTiny.EntityGroup/Scripts/EntityLookupCache.ts"
     ],
-    "InputHash": "dd4f9f33c55da8c513980152e87d9e1a",
-    "GeneratedAt": "Mon Feb 18 2019 10:15:56 GMT+0400 (Московское время (зима))"
+    "InputHash": "a818bc24a01612de2692ffcf67cb79e1",
+    "GeneratedAt": "Mon Feb 18 2019 15:38:56 GMT+0400 (Московское время (зима))"
 }

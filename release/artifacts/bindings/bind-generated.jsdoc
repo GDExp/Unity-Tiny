@@ -31,6 +31,12 @@
 /**
 
 @component
+@memberof entities.game.Share
+@name Component
+*/
+/**
+
+@component
 @memberof game
 @name Block
 */
@@ -225,6 +231,12 @@
 @component
 @memberof ut.Core2D.layers
 @name Cutscene
+*/
+/**
+
+@component
+@memberof ut.Core2D.layers
+@name Share
 */
 /**
 

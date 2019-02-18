@@ -336,6 +336,7 @@ declare namespace ut{
             GameUI: EntityGroupData;
             MainMenu: EntityGroupData;
             MainScene: EntityGroupData;
+            Share: EntityGroupData;
         }
     }
 }
@@ -367,6 +368,10 @@ declare namespace ut.Core2D.layers{
     }
     class Cutscene extends ut.Component {
         static _wrap(w: number, e: number): Cutscene;
+        static readonly cid: number;
+    }
+    class Share extends ut.Component {
+        static _wrap(w: number, e: number): Share;
         static readonly cid: number;
     }
 }

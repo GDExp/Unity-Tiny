@@ -26,7 +26,7 @@
         "Children": [{
             "Item": {
                 "Name": "JavaScript",
-                "Size": 141200,
+                "Size": 146438,
                 "CompressedSize": 0
             }
         }, {
@@ -61,6 +61,36 @@
             }]
         }, {
             "Item": {
+                "Name": "Assets/Unity Tiny - Stack Jump/Textures/Credits.png",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "aa2c2adf49ad92d46bad6ce54727aa6b", "FileId": 2800000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/Unity Tiny - Stack Jump/html5/release/artifacts/assets/Credits.png",
+                    "Size": 7160,
+                    "CompressedSize": 4293,
+                    "Object": { "$TypeId": 10, "Guid": "aa2c2adf49ad92d46bad6ce54727aa6b", "FileId": 2800000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/Unity Tiny - Stack Jump/Textures/Bacground.png",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "67e3bd0e509c67d44bc4e7c01971440e", "FileId": 2800000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/Unity Tiny - Stack Jump/html5/release/artifacts/assets/Bacground.png",
+                    "Size": 379244,
+                    "CompressedSize": 287166,
+                    "Object": { "$TypeId": 10, "Guid": "67e3bd0e509c67d44bc4e7c01971440e", "FileId": 2800000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
                 "Name": "Assets/Unity Tiny - Stack Jump/Textures/Start Pixel.png",
                 "Size": 0,
                 "CompressedSize": 0,
@@ -91,6 +121,36 @@
             }]
         }, {
             "Item": {
+                "Name": "Assets/Unity Tiny - Stack Jump/Textures/back.png",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "3bf1bc68af24993478262c3c3aa8d04c", "FileId": 2800000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/Unity Tiny - Stack Jump/html5/release/artifacts/assets/back.png",
+                    "Size": 5824,
+                    "CompressedSize": 3541,
+                    "Object": { "$TypeId": 10, "Guid": "3bf1bc68af24993478262c3c3aa8d04c", "FileId": 2800000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/Unity Tiny - Stack Jump/Textures/Jumping Zombie.jpg",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "725f0d29218f8fa47885c6ec38e982c5", "FileId": 2800000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/Unity Tiny - Stack Jump/html5/release/artifacts/assets/Jumping Zombie.jpg",
+                    "Size": 7684,
+                    "CompressedSize": 2129,
+                    "Object": { "$TypeId": 10, "Guid": "725f0d29218f8fa47885c6ec38e982c5", "FileId": 2800000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
                 "Name": "sactx-128x128-DXT5-Font-42b67fd4",
                 "Size": 0,
                 "CompressedSize": 0
@@ -113,8 +173,8 @@
         "Children": [{
             "Item": {
                 "Name": "TinyExport/Unity Tiny - Stack Jump/html5/release/build/entities.js",
-                "Size": 46701,
-                "CompressedSize": 5821
+                "Size": 61533,
+                "CompressedSize": 7209
             },
             "Children": [{
                 "Item": {
@@ -125,52 +185,58 @@
             }, {
                 "Item": {
                     "Name": "GameOver",
-                    "Size": 10997,
-                    "CompressedSize": 2190
+                    "Size": 13363,
+                    "CompressedSize": 2548
                 }
             }, {
                 "Item": {
                     "Name": "GameUI",
-                    "Size": 5986,
-                    "CompressedSize": 1391
+                    "Size": 7743,
+                    "CompressedSize": 1668
                 }
             }, {
                 "Item": {
                     "Name": "MainMenu",
                     "Size": 10870,
-                    "CompressedSize": 2147
+                    "CompressedSize": 2145
                 }
             }, {
                 "Item": {
                     "Name": "MainScene",
-                    "Size": 14841,
-                    "CompressedSize": 2613
+                    "Size": 14854,
+                    "CompressedSize": 2618
+                }
+            }, {
+                "Item": {
+                    "Name": "Share",
+                    "Size": 10698,
+                    "CompressedSize": 2089
                 }
             }]
         }, {
             "Item": {
                 "Name": "TinyExport/Unity Tiny - Stack Jump/html5/release/build/bindings.js",
-                "Size": 109464,
-                "CompressedSize": 9175
+                "Size": 114415,
+                "CompressedSize": 9510
             }
         }, {
             "Item": {
                 "Name": "TinyExport/Unity Tiny - Stack Jump/html5/release/build/code.js",
-                "Size": 17601,
-                "CompressedSize": 3472
+                "Size": 18161,
+                "CompressedSize": 3541
             },
             "Children": [{
                 "Item": {
                     "Name": "TinyExport/Unity Tiny - Stack Jump/html5/release/artifacts/scripts/tsc-emit.js",
-                    "Size": 17502,
-                    "CompressedSize": 3386
+                    "Size": 18062,
+                    "CompressedSize": 3455
                 }
             }]
         }, {
             "Item": {
                 "Name": "TinyExport/Unity Tiny - Stack Jump/html5/release/build/main.js",
                 "Size": 4097,
-                "CompressedSize": 1075
+                "CompressedSize": 1073
             }
         }]
     }]

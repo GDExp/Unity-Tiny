@@ -80,6 +80,7 @@ var game;
         CanvasInputSystem.mainScene = "game.MainScene";
         CanvasInputSystem.scores = "game.GameUI";
         CanvasInputSystem.blocks = "game.BlocksGroup";
+        CanvasInputSystem.share = false;
         return CanvasInputSystem;
     }(ut.ComponentSystem));
     game.CanvasInputSystem = CanvasInputSystem;
@@ -97,6 +98,18 @@ var game;
                 game.SpawnerSystems.spawner = null;
                 game.ScoreSystem.scoreEntity = null;
                 newGame(world, 0);
+                break;
+            case (3): //share
+                if (!this.share) {
+                    this.share = true;
+                    ut.EntityGroup.destroyAll(world, 'game.GameOver');
+                    ut.EntityGroup.instantiate(world, 'game.Share');
+                }
+                else {
+                    this.share = false;
+                    ut.EntityGroup.destroyAll(world, 'game.Share');
+                    ut.EntityGroup.instantiate(world, 'game.GameOver');
+                }
                 break;
             default: //new game
                 ut.EntityGroup.instantiate(world, 'game.MainScene');

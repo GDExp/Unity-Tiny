@@ -59,6 +59,18 @@ namespace entities.game.MainScene
 
     }
 }
+namespace entities.game.Share
+{
+    [global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Sequential)]
+    public struct Component : UTiny.IComponentData
+    {
+
+
+
+
+
+    }
+}
 namespace game
 {
     [global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Sequential)]
@@ -260,6 +272,18 @@ namespace ut.Core2D.layers
 {
     [global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Sequential)]
     public struct Cutscene : UTiny.IComponentData
+    {
+
+
+
+
+
+    }
+}
+namespace ut.Core2D.layers
+{
+    [global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Sequential)]
+    public struct Share : UTiny.IComponentData
     {
 
 
