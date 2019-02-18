@@ -11,6 +11,42 @@ namespace entities.game.BlocksGroup
 
     }
 }
+namespace entities.game.GameOver
+{
+    [global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Sequential)]
+    public struct Component : UTiny.IComponentData
+    {
+
+
+
+
+
+    }
+}
+namespace entities.game.GameUI
+{
+    [global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Sequential)]
+    public struct Component : UTiny.IComponentData
+    {
+
+
+
+
+
+    }
+}
+namespace entities.game.MainMenu
+{
+    [global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Sequential)]
+    public struct Component : UTiny.IComponentData
+    {
+
+
+
+
+
+    }
+}
 namespace entities.game.MainScene
 {
     [global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Sequential)]
@@ -38,6 +74,19 @@ namespace game
 namespace game
 {
     [global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Sequential)]
+    public struct ButtonInfo : UTiny.IComponentData
+    {
+
+
+        public sbyte menuState;
+
+
+
+    }
+}
+namespace game
+{
+    [global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Sequential)]
     public struct Ground : UTiny.IComponentData
     {
 
@@ -57,6 +106,9 @@ namespace game
         public float jumpForce;
         public bool grounded;
         public bool hit;
+        public bool jump;
+        public bool fall;
+        public bool gameOver;
 
 
 
@@ -84,6 +136,10 @@ namespace game
     {
 
 
+        public UTiny.Entity Idle;
+        public UTiny.Entity Jump;
+        public UTiny.Entity Fall;
+        public UTiny.Entity Hit;
 
 
 
