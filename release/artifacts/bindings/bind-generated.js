@@ -208,6 +208,47 @@ entities.game.MainScene.Component._dtorFn = function dtor(ptr) { /* POD, no-op *
 // entities.game.MainScene.Component is a POD type, so a JavaScript side copy constructor entities.game.MainScene.Component._copyFn = function copy(src, dst) { ... } does not need to be generated for it
 Object.defineProperties(entities.game.MainScene.Component, { cid: { configurable: true, get: function() { delete entities.game.MainScene.Component.cid; var offsetsPtr = 0, offsetsCount = 0; return entities.game.MainScene.Component.cid = Module._ut_component_register_cid(/*entities.game.MainScene.Component*/ 1, 0, 0, offsetsPtr, offsetsCount, 0/*"entities::game::MainScene::Component"*/, 0, 0); } } });
 Object.defineProperties(entities.game.MainScene.Component.StorageView, { cid: { configurable: true, get: function() { return entities.game.MainScene.Component.cid; } } });
+entities.game.Share = entities.game.Share || {};
+entities.game.Share.Component = function() {
+};
+entities.game.Share.Component.prototype = Object.create(null);
+entities.game.Share.Component.prototype.constructor = entities.game.Share.Component;
+Object.defineProperties(entities.game.Share.Component.prototype, {
+});
+entities.game.Share.Component._size = 1;
+entities.game.Share.Component._fromPtr = function(ptr, v) {
+  v = v || Object.create(entities.game.Share.Component.prototype);
+  return v;
+};
+entities.game.Share.Component._toPtr = function(ptr, v) {
+};
+entities.game.Share.Component._toTempHeapPtr = function(ptr, v) {
+};
+entities.game.Share.Component._tempHeapPtr = function(v) {
+  var ptr = ut.tempHeapPtrBufferZero(1);
+  if (v) entities.game.Share.Component._toTempHeapPtr(ptr, v);
+  return ptr;
+};
+entities.game.Share.Component.StorageView = function(ptr) {
+  this._ptr = ptr;
+};
+entities.game.Share.Component.StorageView.prototype = Object.create(null);
+entities.game.Share.Component.StorageView.prototype.constructor = entities.game.Share.Component.StorageView;
+entities.game.Share.Component._view = entities.game.Share.Component.StorageView;
+entities.game.Share.Component.StorageView._isSharedComp = entities.game.Share.Component._isSharedComp = false;
+entities.game.Share.Component.StorageView._fromPtr = entities.game.Share.Component._fromPtr;
+entities.game.Share.Component.StorageView._toPtr = entities.game.Share.Component._toPtr;
+entities.game.Share.Component.StorageView._tempHeapPtr = entities.game.Share.Component._tempHeapPtr;
+entities.game.Share.Component.StorageView._size = entities.game.Share.Component._size;
+entities.game.Share.Component.StorageView.prototype.$advance = function() {
+  this._ptr += 1;
+};
+Object.defineProperties(entities.game.Share.Component.StorageView.prototype, {
+});
+entities.game.Share.Component._dtorFn = function dtor(ptr) { /* POD, no-op */ }
+// entities.game.Share.Component is a POD type, so a JavaScript side copy constructor entities.game.Share.Component._copyFn = function copy(src, dst) { ... } does not need to be generated for it
+Object.defineProperties(entities.game.Share.Component, { cid: { configurable: true, get: function() { delete entities.game.Share.Component.cid; var offsetsPtr = 0, offsetsCount = 0; return entities.game.Share.Component.cid = Module._ut_component_register_cid(/*entities.game.Share.Component*/ 1, 0, 0, offsetsPtr, offsetsCount, 0/*"entities::game::Share::Component"*/, 0, 0); } } });
+Object.defineProperties(entities.game.Share.Component.StorageView, { cid: { configurable: true, get: function() { return entities.game.Share.Component.cid; } } });
 var game = game || {};
 game.Block = function() {
 };
@@ -1081,6 +1122,46 @@ ut.Core2D.layers.Cutscene._dtorFn = function dtor(ptr) { /* POD, no-op */ }
 // ut.Core2D.layers.Cutscene is a POD type, so a JavaScript side copy constructor ut.Core2D.layers.Cutscene._copyFn = function copy(src, dst) { ... } does not need to be generated for it
 Object.defineProperties(ut.Core2D.layers.Cutscene, { cid: { configurable: true, get: function() { delete ut.Core2D.layers.Cutscene.cid; var offsetsPtr = 0, offsetsCount = 0; return ut.Core2D.layers.Cutscene.cid = Module._ut_component_register_cid(/*ut.Core2D.layers.Cutscene*/ 1, 0, 0, offsetsPtr, offsetsCount, 0/*"ut::Core2D::layers::Cutscene"*/, 0, 0); } } });
 Object.defineProperties(ut.Core2D.layers.Cutscene.StorageView, { cid: { configurable: true, get: function() { return ut.Core2D.layers.Cutscene.cid; } } });
+ut.Core2D.layers.Share = function() {
+};
+ut.Core2D.layers.Share.prototype = Object.create(null);
+ut.Core2D.layers.Share.prototype.constructor = ut.Core2D.layers.Share;
+Object.defineProperties(ut.Core2D.layers.Share.prototype, {
+});
+ut.Core2D.layers.Share._size = 1;
+ut.Core2D.layers.Share._fromPtr = function(ptr, v) {
+  v = v || Object.create(ut.Core2D.layers.Share.prototype);
+  return v;
+};
+ut.Core2D.layers.Share._toPtr = function(ptr, v) {
+};
+ut.Core2D.layers.Share._toTempHeapPtr = function(ptr, v) {
+};
+ut.Core2D.layers.Share._tempHeapPtr = function(v) {
+  var ptr = ut.tempHeapPtrBufferZero(1);
+  if (v) ut.Core2D.layers.Share._toTempHeapPtr(ptr, v);
+  return ptr;
+};
+ut.Core2D.layers.Share.StorageView = function(ptr) {
+  this._ptr = ptr;
+};
+ut.Core2D.layers.Share.StorageView.prototype = Object.create(null);
+ut.Core2D.layers.Share.StorageView.prototype.constructor = ut.Core2D.layers.Share.StorageView;
+ut.Core2D.layers.Share._view = ut.Core2D.layers.Share.StorageView;
+ut.Core2D.layers.Share.StorageView._isSharedComp = ut.Core2D.layers.Share._isSharedComp = false;
+ut.Core2D.layers.Share.StorageView._fromPtr = ut.Core2D.layers.Share._fromPtr;
+ut.Core2D.layers.Share.StorageView._toPtr = ut.Core2D.layers.Share._toPtr;
+ut.Core2D.layers.Share.StorageView._tempHeapPtr = ut.Core2D.layers.Share._tempHeapPtr;
+ut.Core2D.layers.Share.StorageView._size = ut.Core2D.layers.Share._size;
+ut.Core2D.layers.Share.StorageView.prototype.$advance = function() {
+  this._ptr += 1;
+};
+Object.defineProperties(ut.Core2D.layers.Share.StorageView.prototype, {
+});
+ut.Core2D.layers.Share._dtorFn = function dtor(ptr) { /* POD, no-op */ }
+// ut.Core2D.layers.Share is a POD type, so a JavaScript side copy constructor ut.Core2D.layers.Share._copyFn = function copy(src, dst) { ... } does not need to be generated for it
+Object.defineProperties(ut.Core2D.layers.Share, { cid: { configurable: true, get: function() { delete ut.Core2D.layers.Share.cid; var offsetsPtr = 0, offsetsCount = 0; return ut.Core2D.layers.Share.cid = Module._ut_component_register_cid(/*ut.Core2D.layers.Share*/ 1, 0, 0, offsetsPtr, offsetsCount, 0/*"ut::Core2D::layers::Share"*/, 0, 0); } } });
+Object.defineProperties(ut.Core2D.layers.Share.StorageView, { cid: { configurable: true, get: function() { return ut.Core2D.layers.Share.cid; } } });
 ut.EditorExtensions = ut.EditorExtensions || {};
 ut.EditorExtensions.AssetReferenceAnimationClip = function(arg0, arg1, arg2) {
   this._guid = (arg0 === undefined ? '' : arg0);

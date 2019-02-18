@@ -78,6 +78,22 @@ class Component extends ut.Component {
 }
 
 }
+declare namespace entities.game.Share {
+
+class Component extends ut.Component {
+  constructor();
+  static readonly cid: number;
+  static readonly _view: any;
+  static readonly _isSharedComp: boolean;
+
+  static _size: number;
+  static _fromPtr(p: number, v?: Component): Component;
+  static _toPtr(p: number, v: Component): void;
+  static _tempHeapPtr(v: Component): number;
+  static _dtorFn(v: Component): void;
+}
+
+}
 declare namespace game {
 
 class Block extends ut.Component {
@@ -365,6 +381,22 @@ class Cutscene extends ut.Component {
   static _toPtr(p: number, v: Cutscene): void;
   static _tempHeapPtr(v: Cutscene): number;
   static _dtorFn(v: Cutscene): void;
+}
+
+}
+declare namespace ut.Core2D.layers {
+
+class Share extends ut.Component {
+  constructor();
+  static readonly cid: number;
+  static readonly _view: any;
+  static readonly _isSharedComp: boolean;
+
+  static _size: number;
+  static _fromPtr(p: number, v?: Share): Share;
+  static _toPtr(p: number, v: Share): void;
+  static _tempHeapPtr(v: Share): number;
+  static _dtorFn(v: Share): void;
 }
 
 }

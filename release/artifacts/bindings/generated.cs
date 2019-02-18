@@ -48,6 +48,12 @@ namespace entities.game
         {
         }
     }
+    namespace Share
+    {
+        public struct Component : IComponentData
+        {
+        }
+    }
 }
 
 namespace game
@@ -121,6 +127,9 @@ namespace ut.Core2D
         {
         }
         public struct Cutscene : IComponentData
+        {
+        }
+        public struct Share : IComponentData
         {
         }
     }
