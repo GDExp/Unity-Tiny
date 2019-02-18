@@ -126,7 +126,7 @@
                 "Item": {
                     "Name": "GameOver",
                     "Size": 10997,
-                    "CompressedSize": 2188
+                    "CompressedSize": 2190
                 }
             }, {
                 "Item": {
@@ -170,7 +170,7 @@
             "Item": {
                 "Name": "TinyExport/Unity Tiny - Stack Jump/html5/release/build/main.js",
                 "Size": 4097,
-                "CompressedSize": 1076
+                "CompressedSize": 1075
             }
         }]
     }]
