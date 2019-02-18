@@ -114,7 +114,7 @@
             "Item": {
                 "Name": "TinyExport/Unity Tiny - Stack Jump/html5/release/build/entities.js",
                 "Size": 46701,
-                "CompressedSize": 5822
+                "CompressedSize": 5820
             },
             "Children": [{
                 "Item": {
@@ -126,7 +126,7 @@
                 "Item": {
                     "Name": "GameOver",
                     "Size": 10997,
-                    "CompressedSize": 2189
+                    "CompressedSize": 2188
                 }
             }, {
                 "Item": {
@@ -138,7 +138,7 @@
                 "Item": {
                     "Name": "MainMenu",
                     "Size": 10870,
-                    "CompressedSize": 2148
+                    "CompressedSize": 2146
                 }
             }, {
                 "Item": {
