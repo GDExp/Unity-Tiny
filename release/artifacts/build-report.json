@@ -113,7 +113,7 @@
         "Children": [{
             "Item": {
                 "Name": "TinyExport/Unity Tiny - Stack Jump/html5/release/build/entities.js",
-                "Size": 46714,
+                "Size": 46701,
                 "CompressedSize": 5822
             },
             "Children": [{
@@ -126,7 +126,7 @@
                 "Item": {
                     "Name": "GameOver",
                     "Size": 10997,
-                    "CompressedSize": 2186
+                    "CompressedSize": 2189
                 }
             }, {
                 "Item": {
@@ -137,8 +137,8 @@
             }, {
                 "Item": {
                     "Name": "MainMenu",
-                    "Size": 10883,
-                    "CompressedSize": 2152
+                    "Size": 10870,
+                    "CompressedSize": 2148
                 }
             }, {
                 "Item": {
@@ -169,8 +169,8 @@
         }, {
             "Item": {
                 "Name": "TinyExport/Unity Tiny - Stack Jump/html5/release/build/main.js",
-                "Size": 4129,
-                "CompressedSize": 1087
+                "Size": 4097,
+                "CompressedSize": 1077
             }
         }]
     }]
