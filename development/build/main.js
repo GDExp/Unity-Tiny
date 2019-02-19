@@ -23,6 +23,8 @@ ut.importModule(ut.HitBox2D);
 ut.importModule(ut.UILayout);
 ut.importModule(ut.Text);
 ut.importModule(ut.HTML);
+ut.importModule(ut.UIControls);
+ut.importModule(ut.Animation);
 ut.main = function() {
     // Singleton world
     var world = new ut.World();
@@ -30,11 +32,13 @@ ut.main = function() {
     // Schedule all systems
     var scheduler = world.scheduler();
     game.BlockMovementJS.update = new game.BlockMovement()._MakeSystemFn();
+    game.CanvasInputSystemJS.update = new game.CanvasInputSystem()._MakeSystemFn();
     game.PlayerCollisionSystemJS.update = new game.PlayerCollisionSystem()._MakeSystemFn();
     game.PlayerInputJS.update = new game.PlayerInput()._MakeSystemFn();
     game.ScoreSystemJS.update = new game.ScoreSystem()._MakeSystemFn();
     game.SpawnerSystemsJS.update = new game.SpawnerSystems()._MakeSystemFn();
     scheduler.schedule(game.BlockMovementJS);
+    scheduler.schedule(game.CanvasInputSystemJS);
     scheduler.schedule(game.PlayerCollisionSystemJS);
     scheduler.schedule(game.PlayerInputJS);
     scheduler.schedule(game.ScoreSystemJS);
@@ -44,6 +48,8 @@ ut.main = function() {
     scheduler.schedule(ut.Core2D.SequencePlayerSystem);
     scheduler.schedule(ut.HitBox2D.HitBox2DSystem);
     scheduler.schedule(ut.Shared.InputFence);
+    scheduler.schedule(ut.UIControls.MouseInteractionSystem);
+    scheduler.schedule(ut.UIControls.ToggleCheckedSystem);
     scheduler.schedule(ut.Shared.UserCodeStart);
     scheduler.schedule(ut.Shared.UserCodeEnd);
     scheduler.schedule(ut.UILayout.UICanvasSystem);
@@ -51,6 +57,13 @@ ut.main = function() {
     scheduler.schedule(ut.UILayout.SetSprite2DSizeSystem);
     scheduler.schedule(ut.UILayout.SetRectTransformSizeSystem);
     scheduler.schedule(ut.HTML.TextMeasurement);
+    scheduler.schedule(ut.UIControls.UIControlsSystem);
+    scheduler.schedule(ut.UIControls.ButtonSystem);
+    scheduler.schedule(ut.UIControls.ToggleSystem);
+    scheduler.schedule(ut.Animation.AnimationClipSourceSystem);
+    scheduler.schedule(ut.Animation.AnimationClipPlayerSystem);
+    scheduler.schedule(ut.Animation.AnimationBlenderSystem);
+    scheduler.schedule(ut.Animation.AnimationResultApplierSystem);
     scheduler.schedule(ut.Shared.RenderingFence);
     scheduler.schedule(ut.Core2D.UpdateLocalTransformSystem);
     scheduler.schedule(ut.Core2D.UpdateWorldTransformSystem);
@@ -64,8 +77,8 @@ ut.main = function() {
 
     // Initialize all configuration data
     var c0 = world.getConfigData(ut.Core2D.DisplayInfo);
-    c0.width = 800;
-    c0.height = 640;
+    c0.width = 300;
+    c0.height = 400;
     c0.autoSizeToFrame = true;
     c0.renderMode = 0;
     world.setConfigData(c0);
@@ -80,7 +93,7 @@ ut.main = function() {
     UT_ASSETS_SETUP(world);
 
     // Create and initialize all startup entities
-    ut.EntityGroup.instantiate(world, "game.MainScene");
+    ut.EntityGroup.instantiate(world, "game.MainMenu");
 
     // Set up the WebSocket client
     ut._wsclient = ut._wsclient || {};

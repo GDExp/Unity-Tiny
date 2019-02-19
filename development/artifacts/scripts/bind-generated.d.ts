@@ -89,6 +89,18 @@ declare namespace game{
         static _tempHeapPtr(v: Block): number;
         static _dtorFn(v: Block): void;
     }
+    class ButtonInfo extends ut.Component {
+        constructor();
+        menuState: number;
+        static readonly cid: number;
+        static readonly _view: any;
+        static readonly _isSharedComp: boolean;
+        static _size: number;
+        static _fromPtr(p: number, v?: ButtonInfo): ButtonInfo;
+        static _toPtr(p: number, v: ButtonInfo): void;
+        static _tempHeapPtr(v: ButtonInfo): number;
+        static _dtorFn(v: ButtonInfo): void;
+    }
     class Ground extends ut.Component {
         constructor();
         static readonly cid: number;
@@ -105,6 +117,9 @@ declare namespace game{
         jumpForce: number;
         grounded: boolean;
         hit: boolean;
+        jump: boolean;
+        fall: boolean;
+        gameOver: boolean;
         static readonly cid: number;
         static readonly _view: any;
         static readonly _isSharedComp: boolean;
@@ -130,6 +145,10 @@ declare namespace game{
     }
     class Player extends ut.Component {
         constructor();
+        Idle: ut.Entity;
+        Jump: ut.Entity;
+        Fall: ut.Entity;
+        Hit: ut.Entity;
         static readonly cid: number;
         static readonly _view: any;
         static readonly _isSharedComp: boolean;
@@ -313,7 +332,11 @@ declare namespace ut{
         game: {
             [data: string]: EntityGroupData;
             BlocksGroup: EntityGroupData;
+            GameOver: EntityGroupData;
+            GameUI: EntityGroupData;
+            MainMenu: EntityGroupData;
             MainScene: EntityGroupData;
+            Share: EntityGroupData;
         }
     }
 }
@@ -345,6 +368,10 @@ declare namespace ut.Core2D.layers{
     }
     class Cutscene extends ut.Component {
         static _wrap(w: number, e: number): Cutscene;
+        static readonly cid: number;
+    }
+    class Share extends ut.Component {
+        static _wrap(w: number, e: number): Share;
         static readonly cid: number;
     }
 }
