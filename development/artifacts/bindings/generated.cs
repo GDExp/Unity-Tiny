@@ -10,6 +10,8 @@ using UTiny.Physics2D;
 using UTiny.HitBox2D;
 using UTiny.UILayout;
 using UTiny.Text;
+using UTiny.UIControls;
+using UTiny.Animation;
 
 /*
  * !!! TEMP UNITL PROPER SCENE FORMAT !!!
@@ -22,7 +24,31 @@ namespace entities.game
         {
         }
     }
+    namespace GameOver
+    {
+        public struct Component : IComponentData
+        {
+        }
+    }
+    namespace GameUI
+    {
+        public struct Component : IComponentData
+        {
+        }
+    }
+    namespace MainMenu
+    {
+        public struct Component : IComponentData
+        {
+        }
+    }
     namespace MainScene
+    {
+        public struct Component : IComponentData
+        {
+        }
+    }
+    namespace Share
     {
         public struct Component : IComponentData
         {
@@ -35,6 +61,10 @@ namespace game
     public struct Block : IComponentData
     {
     }
+    public struct ButtonInfo : IComponentData
+    {
+        public sbyte menuState;
+    }
     public struct Ground : IComponentData
     {
     }
@@ -43,6 +73,9 @@ namespace game
         public float jumpForce;
         public bool grounded;
         public bool hit;
+        public bool jump;
+        public bool fall;
+        public bool gameOver;
     }
     public struct MoveBlock : IComponentData
     {
@@ -52,6 +85,10 @@ namespace game
     }
     public struct Player : IComponentData
     {
+        public Entity Idle;
+        public Entity Jump;
+        public Entity Fall;
+        public Entity Hit;
     }
     public struct Score : IComponentData
     {
@@ -90,6 +127,9 @@ namespace ut.Core2D
         {
         }
         public struct Cutscene : IComponentData
+        {
+        }
+        public struct Share : IComponentData
         {
         }
     }
@@ -220,9 +260,23 @@ namespace ut.Text
 namespace ut.HTML
 {
 }
+
+namespace ut.UIControls
+{
+}
+
+namespace ut.Animation
+{
+}
 namespace game
 {
     public class BlockMovementJS : IComponentSystem
+    {
+    }
+}
+namespace game
+{
+    public class CanvasInputSystemJS : IComponentSystem
     {
     }
 }
