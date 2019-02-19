@@ -173,14 +173,14 @@
         "Children": [{
             "Item": {
                 "Name": "TinyExport/Unity Tiny - Stack Jump/html5/release/build/entities.js",
-                "Size": 61533,
-                "CompressedSize": 7209
+                "Size": 61527,
+                "CompressedSize": 7200
             },
             "Children": [{
                 "Item": {
                     "Name": "BlocksGroup",
-                    "Size": 3920,
-                    "CompressedSize": 935
+                    "Size": 3914,
+                    "CompressedSize": 928
                 }
             }, {
                 "Item": {
@@ -198,7 +198,7 @@
                 "Item": {
                     "Name": "MainMenu",
                     "Size": 10870,
-                    "CompressedSize": 2145
+                    "CompressedSize": 2148
                 }
             }, {
                 "Item": {
@@ -210,7 +210,7 @@
                 "Item": {
                     "Name": "Share",
                     "Size": 10698,
-                    "CompressedSize": 2089
+                    "CompressedSize": 2092
                 }
             }]
         }, {
@@ -235,8 +235,8 @@
         }, {
             "Item": {
                 "Name": "TinyExport/Unity Tiny - Stack Jump/html5/release/build/main.js",
-                "Size": 4097,
-                "CompressedSize": 1073
+                "Size": 4129,
+                "CompressedSize": 1087
             }
         }]
     }]
