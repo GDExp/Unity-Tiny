@@ -7,7 +7,31 @@
 /**
 
 @component
+@memberof entities.game.GameOver
+@name Component
+*/
+/**
+
+@component
+@memberof entities.game.GameUI
+@name Component
+*/
+/**
+
+@component
+@memberof entities.game.MainMenu
+@name Component
+*/
+/**
+
+@component
 @memberof entities.game.MainScene
+@name Component
+*/
+/**
+
+@component
+@memberof entities.game.Share
 @name Component
 */
 /**
@@ -15,6 +39,18 @@
 @component
 @memberof game
 @name Block
+*/
+/**
+
+@component
+@memberof game
+@name ButtonInfo
+*/
+/**
+
+@member {int8}
+@memberof game.ButtonInfo
+@name menuState
 */
 /**
 
@@ -48,6 +84,24 @@
 */
 /**
 
+@member {bool}
+@memberof game.InputSystem
+@name jump
+*/
+/**
+
+@member {bool}
+@memberof game.InputSystem
+@name fall
+*/
+/**
+
+@member {bool}
+@memberof game.InputSystem
+@name gameOver
+*/
+/**
+
 @component
 @memberof game
 @name MoveBlock
@@ -75,6 +129,30 @@
 @component
 @memberof game
 @name Player
+*/
+/**
+
+@member {ut.Entity}
+@memberof game.Player
+@name Idle
+*/
+/**
+
+@member {ut.Entity}
+@memberof game.Player
+@name Jump
+*/
+/**
+
+@member {ut.Entity}
+@memberof game.Player
+@name Fall
+*/
+/**
+
+@member {ut.Entity}
+@memberof game.Player
+@name Hit
 */
 /**
 
@@ -153,6 +231,12 @@
 @component
 @memberof ut.Core2D.layers
 @name Cutscene
+*/
+/**
+
+@component
+@memberof ut.Core2D.layers
+@name Share
 */
 /**
 
@@ -351,6 +435,12 @@
 @system
 @memberof game
 @name BlockMovementJS
+*/
+/**
+
+@system
+@memberof game
+@name CanvasInputSystemJS
 */
 /**
 

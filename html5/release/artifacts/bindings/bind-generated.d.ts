@@ -14,7 +14,71 @@ class Component extends ut.Component {
 }
 
 }
+declare namespace entities.game.GameOver {
+
+class Component extends ut.Component {
+  constructor();
+  static readonly cid: number;
+  static readonly _view: any;
+  static readonly _isSharedComp: boolean;
+
+  static _size: number;
+  static _fromPtr(p: number, v?: Component): Component;
+  static _toPtr(p: number, v: Component): void;
+  static _tempHeapPtr(v: Component): number;
+  static _dtorFn(v: Component): void;
+}
+
+}
+declare namespace entities.game.GameUI {
+
+class Component extends ut.Component {
+  constructor();
+  static readonly cid: number;
+  static readonly _view: any;
+  static readonly _isSharedComp: boolean;
+
+  static _size: number;
+  static _fromPtr(p: number, v?: Component): Component;
+  static _toPtr(p: number, v: Component): void;
+  static _tempHeapPtr(v: Component): number;
+  static _dtorFn(v: Component): void;
+}
+
+}
+declare namespace entities.game.MainMenu {
+
+class Component extends ut.Component {
+  constructor();
+  static readonly cid: number;
+  static readonly _view: any;
+  static readonly _isSharedComp: boolean;
+
+  static _size: number;
+  static _fromPtr(p: number, v?: Component): Component;
+  static _toPtr(p: number, v: Component): void;
+  static _tempHeapPtr(v: Component): number;
+  static _dtorFn(v: Component): void;
+}
+
+}
 declare namespace entities.game.MainScene {
+
+class Component extends ut.Component {
+  constructor();
+  static readonly cid: number;
+  static readonly _view: any;
+  static readonly _isSharedComp: boolean;
+
+  static _size: number;
+  static _fromPtr(p: number, v?: Component): Component;
+  static _toPtr(p: number, v: Component): void;
+  static _tempHeapPtr(v: Component): number;
+  static _dtorFn(v: Component): void;
+}
+
+}
+declare namespace entities.game.Share {
 
 class Component extends ut.Component {
   constructor();
@@ -48,6 +112,24 @@ class Block extends ut.Component {
 }
 declare namespace game {
 
+class ButtonInfo extends ut.Component {
+  constructor(menuState?: number);
+  menuState: number;
+  
+  static readonly cid: number;
+  static readonly _view: any;
+  static readonly _isSharedComp: boolean;
+
+  static _size: number;
+  static _fromPtr(p: number, v?: ButtonInfo): ButtonInfo;
+  static _toPtr(p: number, v: ButtonInfo): void;
+  static _tempHeapPtr(v: ButtonInfo): number;
+  static _dtorFn(v: ButtonInfo): void;
+}
+
+}
+declare namespace game {
+
 class Ground extends ut.Component {
   constructor();
   static readonly cid: number;
@@ -65,13 +147,19 @@ class Ground extends ut.Component {
 declare namespace game {
 
 class InputSystem extends ut.Component {
-  constructor(jumpForce?: number, grounded?: boolean, hit?: boolean);
+  constructor(jumpForce?: number, grounded?: boolean, hit?: boolean, jump?: boolean, fall?: boolean, gameOver?: boolean);
   jumpForce: number;
   grounded: boolean;
   hit: boolean;
+  jump: boolean;
+  fall: boolean;
+  gameOver: boolean;
   static readonly jumpForce: ComponentFieldDesc;
   static readonly grounded: ComponentFieldDesc;
   static readonly hit: ComponentFieldDesc;
+  static readonly jump: ComponentFieldDesc;
+  static readonly fall: ComponentFieldDesc;
+  static readonly gameOver: ComponentFieldDesc;
   static readonly cid: number;
   static readonly _view: any;
   static readonly _isSharedComp: boolean;
@@ -109,7 +197,15 @@ class MoveBlock extends ut.Component {
 declare namespace game {
 
 class Player extends ut.Component {
-  constructor();
+  constructor(Idle?: Entity, Jump?: Entity, Fall?: Entity, Hit?: Entity);
+  Idle: Entity;
+  Jump: Entity;
+  Fall: Entity;
+  Hit: Entity;
+  static readonly Idle: EntityComponentFieldDesc;
+  static readonly Jump: EntityComponentFieldDesc;
+  static readonly Fall: EntityComponentFieldDesc;
+  static readonly Hit: EntityComponentFieldDesc;
   static readonly cid: number;
   static readonly _view: any;
   static readonly _isSharedComp: boolean;
@@ -285,6 +381,22 @@ class Cutscene extends ut.Component {
   static _toPtr(p: number, v: Cutscene): void;
   static _tempHeapPtr(v: Cutscene): number;
   static _dtorFn(v: Cutscene): void;
+}
+
+}
+declare namespace ut.Core2D.layers {
+
+class Share extends ut.Component {
+  constructor();
+  static readonly cid: number;
+  static readonly _view: any;
+  static readonly _isSharedComp: boolean;
+
+  static _size: number;
+  static _fromPtr(p: number, v?: Share): Share;
+  static _toPtr(p: number, v: Share): void;
+  static _tempHeapPtr(v: Share): number;
+  static _dtorFn(v: Share): void;
 }
 
 }
@@ -480,6 +592,9 @@ class EntityLayer extends ut.Component {
 }
 declare namespace game {
 var BlockMovementJS: ut.SystemJS;
+}
+declare namespace game {
+var CanvasInputSystemJS: ut.SystemJS;
 }
 declare namespace game {
 var PlayerCollisionSystemJS: ut.SystemJS;
